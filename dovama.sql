@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Počítač: 127.0.0.1
--- Vytvořeno: Ned 27. lis 2016, 23:01
+-- Vytvořeno: Pon 05. pro 2016, 09:56
 -- Verze serveru: 10.1.19-MariaDB
 -- Verze PHP: 5.6.28
 
@@ -19,6 +19,34 @@ SET time_zone = "+00:00";
 --
 -- Databáze: `dovama`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabulky `knihy`
+--
+
+CREATE TABLE `knihy` (
+  `id` int(11) NOT NULL,
+  `nazev` varchar(50) COLLATE utf8_czech_ci NOT NULL,
+  `autor` varchar(50) COLLATE utf8_czech_ci NOT NULL,
+  `popis` text COLLATE utf8_czech_ci NOT NULL,
+  `ean` int(11) NOT NULL,
+  `id_uzivatele` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabulky `pobocky`
+--
+
+CREATE TABLE `pobocky` (
+  `id` int(11) NOT NULL,
+  `jmeno` varchar(20) COLLATE utf8_czech_ci NOT NULL,
+  `adresa` text COLLATE utf8_czech_ci NOT NULL,
+  `vedouci` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
 -- --------------------------------------------------------
 
@@ -45,6 +73,18 @@ INSERT INTO `uzivatele` (`id`, `login`, `heslo`, `role`) VALUES
 --
 
 --
+-- Klíče pro tabulku `knihy`
+--
+ALTER TABLE `knihy`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Klíče pro tabulku `pobocky`
+--
+ALTER TABLE `pobocky`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Klíče pro tabulku `uzivatele`
 --
 ALTER TABLE `uzivatele`
@@ -54,6 +94,16 @@ ALTER TABLE `uzivatele`
 -- AUTO_INCREMENT pro tabulky
 --
 
+--
+-- AUTO_INCREMENT pro tabulku `knihy`
+--
+ALTER TABLE `knihy`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT pro tabulku `pobocky`
+--
+ALTER TABLE `pobocky`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pro tabulku `uzivatele`
 --
