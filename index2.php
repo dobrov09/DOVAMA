@@ -29,9 +29,9 @@ require 'protection.php';
 			<nav id="mainnav">
   				<ul>
                             		<li class="selected-item"><a href="index.html">Hlavní stránka</a></li>
-                           		 <li><a href="#">Knihy</a></li>
-                           		 <li><a href="#">Zaměstnanci</a></li>
-                            		<li><a href="#">Pobočky</a></li>
+                           		 <li><a href="index2.php?s=knihy">Knihy</a></li>
+                           		 <li><a href="index2.php?s=zamestanci">Zaměstnanci</a></li>
+                            		<li><a href="index2.php?=pobocky">Pobočky</a></li>
                             		<li><a href="logout.php">Odhlášení</a></li>
                         	</ul>
 			</nav>
