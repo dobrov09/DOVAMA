@@ -32,7 +32,7 @@ require 'protection.php';
                            		 <li><a href="#">Knihy</a></li>
                            		 <li><a href="#">Zaměstnanci</a></li>
                             		<li><a href="#">Pobočky</a></li>
-                            		<li><a href="#">Odhlášení</a></li>
+                            		<li><a href="logout.php">Odhlášení</a></li>
                         	</ul>
 			</nav>
 

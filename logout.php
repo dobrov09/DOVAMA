@@ -3,7 +3,7 @@
 
  //Specify a file which will be displayed after logout
  //Vyberte soubor, který se zobrazí po odhlásení
- $logoutfile="login.php";
+ $logoutfile="login.php?s=logout";
  
  session_start();
  $_SESSION = array();
