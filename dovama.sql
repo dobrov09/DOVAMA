@@ -1,6 +1,7 @@
 -- phpMyAdmin SQL Dump
 -- version 4.5.1
 -- http://www.phpmyadmin.net
+
 --
 -- Počítač: 127.0.0.1
 -- Vytvořeno: Pon 05. pro 2016, 09:56
