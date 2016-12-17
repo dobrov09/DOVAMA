@@ -46,13 +46,10 @@ require 'protection.php';
         include "knihy.php";
     break;
     case 'zamestnanci' :
-        include "zamesnanci.php";
+        include "zamestnanci.php";
     break;
     case 'pobocky' :
-        include "zamesnanci.php";
-    break;
-    case 'uzivatele' :
-        include "zamesnanci.php";
+        include "pobocky.php";
     break;
     }
       ?>
