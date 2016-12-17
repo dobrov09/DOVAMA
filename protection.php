@@ -1,5 +1,5 @@
 <?php
- $error_file="index.php";
+ $error_file="index.php?s=neprihlasen";
  
  session_start();
  header("Cache-control: private");

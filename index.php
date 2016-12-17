@@ -63,7 +63,12 @@ require "connect.php";
 			<section id="content" class="column-right">
       <?php
        if ($_GET['s']=='logout'){
-       echo '<h3> Byl jste úspěšně odhlášen.</h3>';
+       echo '<h3>Byl jste úspěšně odhlášen.</h3>';
+       }
+      ?>
+            <?php
+       if ($_GET['s']=='neprihlasen'){
+       echo '<h3>Nejste přihlášen.</h3>';
        }
       ?>
 				<fieldset>
