@@ -6,6 +6,10 @@ require "connect.php";
       {
       $_GET['action'] = '';
       }
+      if(!isset($_GET['s']))
+      {
+      $_GET['s'] = '';
+      }
       if(!isset($_POST['login']))
       {
       $_POST['login'] = '';
@@ -20,7 +24,7 @@ require "connect.php";
      header("Cache-control: private");
      $_SESSION["user_is_logged"] = 1;
      $_SESSION["login"] = $zaznam["login"];
-     $_SESSION["opravneni"] = $zaznam["role"];
+     $_SESSION["role"] = $zaznam["role"];
      header("Location:admin.php");
      exit;
    }
@@ -59,7 +63,7 @@ require "connect.php";
 			<section id="content" class="column-right">
       <?php
        if ($_GET['s']=='logout'){
-       echo '<h3> Byl jste úspěšně odhlášen.</h3';
+       echo '<h3> Byl jste úspěšně odhlášen.</h3>';
        }
       ?>
 				<fieldset>
@@ -75,6 +79,8 @@ require "connect.php";
 					</form>
 	
 				</fieldset>
+        <table style="height: 500px;display: block;">
+        </table>
         </article>
 
 
