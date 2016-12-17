@@ -6,7 +6,12 @@ require "connect.php";
       {
       $_GET['action'] = '';
       }
-       $vysledek = mysql_query("SELECT * FROM uzivatele WHERE login = 'admin'") or die(mysql_error());
+      if(!isset($_POST['login']))
+      {
+      $_POST['login'] = '';
+      }
+       $login =  $_POST['login'];
+       $vysledek = mysql_query("SELECT * FROM uzivatele WHERE login = '$login'") or die(mysql_error());
        $zaznam = mysql_fetch_Array($vysledek);
        
       if ($_GET['action']=='validate'){
@@ -15,7 +20,8 @@ require "connect.php";
      header("Cache-control: private");
      $_SESSION["user_is_logged"] = 1;
      $_SESSION["login"] = $zaznam["login"];
-     header("Location:index2.php");
+     $_SESSION["opravneni"] = $zaznam["role"];
+     header("Location:admin.php");
      exit;
    }
  }              
@@ -51,6 +57,11 @@ require "connect.php";
 			</nav>      
 			</aside>
 			<section id="content" class="column-right">
+      <?php
+       if ($_GET['s']=='logout'){
+       echo '<h3> Byl jste úspěšně odhlášen.</h3';
+       }
+      ?>
 				<fieldset>
 
         

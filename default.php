@@ -1,46 +1,3 @@
-<?php
-require 'connect.php';
-require 'protection.php';
-?>
-
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>DOVAMA - administační rozhraní</title>
-<link rel="stylesheet" href="style.css" type="text/css" />
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-</head>
-
-<body>
-
-		<section id="body" class="width">
-			<aside id="sidebar" class="column-left">
-
-			<header>
-				<h1><a href="#">DOVAMA</a></h1>
-
-				<h2>Přihlášen jako <?php echo $_SESSION["login"]; ?></h2>
-				
-			</header>
-
-			<nav id="mainnav">
-  				<ul>
-                            		<li class="selected-item"><a href="index.html">Hlavní stránka</a></li>
-                           		 <li><a href="index2.php?s=knihy">Knihy</a></li>
-                           		 <li><a href="index2.php?s=zamestanci">Zaměstnanci</a></li>
-                            		<li><a href="index2.php?=pobocky">Pobočky</a></li>
-                            		<li><a href="logout.php">Odhlášení</a></li>
-                        	</ul>
-			</nav>
-
-			
-			
-			</aside>
-			<section id="content" class="column-right">
-                		
 	    <article>
 				
 			
@@ -58,14 +15,3 @@ require 'protection.php';
 Quisque ultrices hendrerit nisl, non malesuada turpis euismod non. Duis nulla sapien, vehicula id luctus malesuada, porta id risus. Suspendisse nec felis eu tellus placerat pellentesque eu eu nibh. Vivamus quam diam, tempus non ipsum id, sagittis pellentesque enim. Etiam in nunc id tellus mollis porttitor. Ut orci turpis, tempor ac sodales sit amet, porttitor id quam. In ut ex at nibh posuere eleifend. Quisque commodo porttitor massa nec porta. Aliquam sed leo lacus. Mauris ipsum orci, bibendum pellentesque facilisis vitae, pellentesque non nunc. Aliquam iaculis orci arcu, ac faucibus risus imperdiet vitae. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc ac mattis odio. Sed condimentum ex sed dignissim suscipit. Vivamus pellentesque pellentesque ligula id semper.</p>
 
 		</article>
-
-
-		</section>
-
-		<div class="clear"></div>
-
-	</section>
-	
-
-</body>
-</html>
