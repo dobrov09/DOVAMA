@@ -51,12 +51,16 @@ require 'protection.php';
     case 'pobocky' :
         include "pobocky.php";
     break;
+    case 'addKniha' :
+        include "pridatKnihu.php";
+    break;    
     }
       ?>
                 	
 
-
+    <table style="height: 500px;display: block;"></table>
 		</section>
+
 
 		<div class="clear"></div>
 
