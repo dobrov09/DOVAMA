@@ -9,6 +9,24 @@ echo '<br><br>';
 
  
 ?>
+
+<?php 
+      if(!isset($_GET['a']))
+      {
+      $_GET['a'] = '';
+      }
+      if(!isset($_GET['id']))
+      {
+      $_GET['id'] = '';
+      }
+
+       
+      if ($_GET['a']=='smaz'){
+     $zaznam = mysql_query("DELETE FROM knihy WHERE id = '$_GET[id]'");
+     header("Location:admin.php?s=knihy");
+   }              
+
+?>
 				<table>
 					<tr>
           <?php
@@ -49,7 +67,7 @@ echo '<br><br>';
       echo '<td>'.$zaznam["nazev"].'</td>';
       echo '<td>'.$zaznam["autor"].'</td>';
       echo '<td>'.$zaznam["pocet"].'</td>';
-      echo '<td><img src="./img/smazat.png"></td>';
+      echo '<td><a href="admin.php?s=knihy&a=smaz&id='.$zaznam["id"].'"><img src="./img/smazat.png"></td></a>';
       echo '<td><img src="./img/editovat.png"></td>';
       echo "</tr>";
 			endwhile;

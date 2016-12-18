@@ -1,10 +1,24 @@
+<?php 
+      if(!isset($_GET['a']))
+      {
+      $_GET['a'] = '';
+      }
+
+       
+      if ($_GET['a']=='proved'){
+     $zaznam = mysql_query("INSERT INTO `knihy` (`id`, `nazev`, `autor`, `pocet`) VALUES (NULL, '$_POST[nazev]', '$_POST[autor]', '$_POST[pocet]')");
+     header("Location:admin.php?s=knihy");
+   }              
+
+?>
+
 
 <article>
 
 				<h3>Přidat knihu</h3>
 				<fieldset>
 
-					<form action="admin.php?a=proved" method="get">
+					<form action="admin.php?s=addKniha&a=proved" method="post">
 						<p><label for="nazev">Název:</label>
 						<input type="text" name="nazev" id="nazev" value="" /><br /></p>		
 						<p><label for="autor">Autor:</label>
