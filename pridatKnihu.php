@@ -25,7 +25,7 @@
 						<input type="text" name="autor" id="autor" value="" /><br /></p>
 						<p><label for="pocet">Počet kusů:</label>
 						<input type="text" name="pocet" id="pocet" value="" /><br /></p>
-						<p><input type="submit" name="send" class="formbutton" value="Send" /></p>
+						<p><input type="submit" name="send" class="formbutton" value="Odeslat" /></p>
 					</form>
 	
 				</fieldset>

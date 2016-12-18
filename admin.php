@@ -53,7 +53,10 @@ require 'protection.php';
     break;
     case 'addKniha' :
         include "pridatKnihu.php";
-    break;    
+    break;
+    case 'editKniha' :
+        include "editaceKnihy.php";
+    break;     
     }
       ?>
                 	

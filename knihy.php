@@ -68,7 +68,7 @@ echo '<br><br>';
       echo '<td>'.$zaznam["autor"].'</td>';
       echo '<td>'.$zaznam["pocet"].'</td>';
       echo '<td><a href="admin.php?s=knihy&a=smaz&id='.$zaznam["id"].'"><img src="./img/smazat.png"></td></a>';
-      echo '<td><img src="./img/editovat.png"></td>';
+      echo '<td><a href="admin.php?s=editKniha&id='.$zaznam["id"].'"><img src="./img/editovat.png"></td>';
       echo "</tr>";
 			endwhile;
       }
