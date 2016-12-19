@@ -56,7 +56,13 @@ require 'protection.php';
     break;
     case 'editKniha' :
         include "editaceKnihy.php";
-    break;     
+    break;
+    case 'addPobocka' :
+        include "pridatPobocku.php";
+    break;
+    case 'editPobocka' :
+        include "editacePobocky.php";
+    break;      
     }
       ?>
                 	
