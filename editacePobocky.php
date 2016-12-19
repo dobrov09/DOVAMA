@@ -17,7 +17,7 @@
 
 <article>
 
-				<h3>Editovat knihu</h3>
+				<h3>Editace pobočky</h3>
 				<fieldset>
 					<form action="admin.php?s=editPobocka&a=proved" method="post">      
           <p><label for="jmeno_pobocky">Jméno pobočky:</label>

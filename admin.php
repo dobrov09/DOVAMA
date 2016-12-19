@@ -68,6 +68,15 @@ require 'protection.php';
     break;
     case 'addZamestnanec' :
         include "pridatZamestnance.php";
+    break;
+    case 'uzivatele' :
+        include "uzivatele.php";
+    break;
+    case 'addUzivatel' :
+        include "pridatUzivatele.php";
+    break;
+    case 'editUzivatel' :
+        include "editaceUzivatele.php";
     break;     
     }
       ?>
