@@ -62,7 +62,13 @@ require 'protection.php';
     break;
     case 'editPobocka' :
         include "editacePobocky.php";
-    break;      
+    break;  
+    case 'editZamestnanec' :
+        include "editaceZamestnance.php";
+    break;
+    case 'addZamestnanec' :
+        include "pridatZamestnance.php";
+    break;     
     }
       ?>
                 	

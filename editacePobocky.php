@@ -27,7 +27,7 @@
 						<p><label for="vedouci">Vedoucí:</label>
             <select name="vedouci">
             <?php
-                  $vysledek = mysql_query("SELECT * FROM zamestnanci") or die(mysql_error());
+                  $vysledek = mysql_query("SELECT * FROM zamestnanci WHERE pozice = 'vedoucí'") or die(mysql_error());
                   while ($zaznam = mysql_fetch_Array($vysledek)):
             			echo '<option value="'.$zaznam["id"].'">'.$zaznam["jmeno"].'</option>';     		       
             			endwhile;      
